@@ -34,7 +34,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// min-height: 100vh;
+	min-height: 100vh;
 	min-height: 35rem;
 	background-image: linear-gradient(to bottom,  rgba(255,168,76,0.6) 0%,rgba(255,123,13,0.6) 100%), url('https://images.unsplash.com/photo-1446824505046-e43605ffb17f');
 	background-blend-mode: soft-light;
@@ -200,6 +200,11 @@ p {
 	z-index: 3;
 }
 
-.footer-container {
-	background-color: transparent;
+footer-container {
+	background-color: red;
+	height: fit-content;
+	padding-top: 50px;
+	border: 2px;
+	border-color: black;
 }
+

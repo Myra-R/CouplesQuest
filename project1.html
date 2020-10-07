@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Couples Quest</title>
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div class="container">
 
         <h1>Couples Quest...
-            <p>Let your adventure start here:</p>
+            <p>Let your adventure start here</p>
         </h1>
 
         <div class="bird-container bird-container--one">
@@ -35,26 +36,43 @@
     </div>
 
 
-    <div class="input">
+    <!-- <div class="input">
         <input type="text" class="inputValue" placeholder="Enter City Name">
-        <input type="submit" value="Submit" class="button">
+        <button type="submit" value="Submit" class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </div> -->
+
+    <div class="container-fluid row">
+        <div class="col-3 left_div justify-content-center pt-3">
+            <div class="search_div mb-4">
+                <h5 class="justify-content-center pt-2 pl-3">Search by city: </h5>
+                <form class="form-inline my-2 my-lg-0 mt-3 ml-3">
+                    <input class="form-control mr-sm-2 float-left" type="search" placeholder="Search" id="search_bar"
+                        aria-label="Search">
+                    <button id="searchbtn" class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                        <i class="fas fa-search"></iclass></i>
+                    </button>
+                </form>
+            </div>
         </div>
+    </div>
 
     <!-- footer container for local weather -->
-    <footer class="page-footer footer-container">
-          <div class="row">
-            <div class="col l6 s12"></div>
-              <h5 class="white-text" style="color:black" >Local Weather</h5>
-              <p class="desc"></p>
-              <p class="temp"></p>
-              <p class="hum"></p>
-              <p class="wind"></p>    
+    <div class="footer">
+        <footer class="page-footer footer-container">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-sm" id="temp"></div>
+                    <div class="col-sm" id="hum"></div>
+                    <div class="col-sm" id=" wind"></div>
+                </div>
             </div>
-          </div>
-      </footer>
+        </footer>
+    </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="project1.js"></script>
 
 </body>
 

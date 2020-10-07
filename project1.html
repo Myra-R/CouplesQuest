@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Couples Quest</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -48,8 +50,8 @@
                 <form class="form-inline my-2 my-lg-0 mt-3 ml-3">
                     <input class="form-control mr-sm-2 float-left" type="search" placeholder="Search" id="search_bar"
                         aria-label="Search">
-                    <button id="searchbtn" class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                        <i class="fas fa-search"></iclass></i>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
                     </button>
                 </form>
             </div>
@@ -57,20 +59,16 @@
     </div>
 
     <!-- footer container for local weather -->
-    <div class="footer">
-        <footer class="page-footer footer-container">
-            <div class="footer-container">
-                <div class="row">
-                    <div class="col-sm" id="temp"></div>
-                    <div class="col-sm" id="hum"></div>
-                    <div class="col-sm" id=" wind"></div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    <footer class="footer-container" style="padding-top: 30px";>
+        <div class="weather-container">
+            <a class="current_temp"></a>
+            <a class="current_hum"></a>
+            <a class="current_wind"></a>
+        </div>
+    </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript"></script>
     <script src="project1.js"></script>
 

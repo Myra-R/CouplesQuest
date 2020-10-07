@@ -200,11 +200,26 @@ p {
 	z-index: 3;
 }
 
-footer-container {
-	background-color: red;
-	height: fit-content;
-	padding-top: 50px;
-	border: 2px;
-	border-color: black;
-}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
+  main {
+    flex: 1 0 auto;
+  }
+
+  .foot-container {
+	  background-color: transparent;
+	  color: black;
+	  font-size: 10px;
+	  padding-top: 30px;
+  }
+
+  .weather-container {
+	background-color: transparent;
+	color: black;
+	font-size: 10px;
+	text-align: center;;
+  }

@@ -219,7 +219,10 @@ body {
 
   .weather-container {
 	background-color: transparent;
+	font-family: 'Arima Madurai', cursive;
 	color: black;
-	font-size: 10px;
-	text-align: center;;
+	font-weight: bold;
+	font-size: 21px;
+	text-align: center;
+	padding-top: 50px;
   }

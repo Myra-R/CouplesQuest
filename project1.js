@@ -56,4 +56,16 @@ $.ajax({
     "height": "100px", "width": "100px"
   });
 
-})
+// button.addEventListener('click', function () {
+//     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&units=imperial&appid=a46d7ace8fe9b30fe73ee26488f40d18')
+//     // promises
+//     .then(response => response.json())
+//     .then(data => {
+//         var nameValue = data['name'];
+//         var tempValue = data['main']['temp'];
+//         var descValue = data['weather'][0]['description'];
+
+//         name.innerHTML = nameValue;
+//         desc.innerHTML = descValue;
+        // temp.innerHTML = tempValue;
+      })

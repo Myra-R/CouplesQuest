@@ -14,20 +14,20 @@ SO THAT WE can find something new and exciting to do in my area
 
 GIVEN a date night adventure dashboard
 
-WHEN I open the dashboard
-THEN I am presented with a city input box and 3 adventure category buttons
-WHEN I enter my city
-THEN the local weather is displayed on the bottom of the screen
-WHEN I select a category 
-THEN I am presented with local event from the selected category with a link
-WHEN I click save
-THEN the event is saved to local storage and added to favorites list
-WHEN I click skip
-THEN a new event is generated
-WHEN I click on the random button
-THEN an event is randomly generated from one of the three categories
-WHEN I open the date night adventure dashboard
-THEN I am presented with my saved event list
+ WHEN I open the dashboard
+ THEN I am presented with a city input box and 3 adventure category buttons
+ WHEN I enter my city
+ THEN the local weather is displayed on the bottom of the screen
+ WHEN I select a category 
+ THEN I am presented with local event from the selected category with a link
+ WHEN I click save
+ THEN the event is saved to local storage and added to favorites list
+ WHEN I click skip
+ THEN a new event is generated
+ WHEN I click on the random button
+ THEN an event is randomly generated from one of the three categories
+ WHEN I open the date night adventure dashboard
+ THEN I am presented with my saved event list
 
 
 ### DEVELOPMENTS/COMMITS0

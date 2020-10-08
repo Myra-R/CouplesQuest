@@ -15,8 +15,9 @@
     <link rel="alternate" type="application/json+oembed"
         href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fmatchboxhero%2Fpen%2FRLebOY&amp;format=json"
         title="Couples Quest">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet">
-        <!-- <link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-0f28f63794ca058b771d15551a377d1c696a0da28f6be5bfe3846d5d60a57bff.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-0f28f63794ca058b771d15551a377d1c696a0da28f6be5bfe3846d5d60a57bff.css">
         <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/2-5161443c.chunk.css"> 
         <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/everypage-dd5474f1.css"> 
         <link rel="stylesheet" media="all" href="https://static.codepen.io/assets/editor/editor-84317cbfecf81b2f11023a8b63c2a2921bae99311a1d234065365f6ac32016bb.css">
@@ -47,7 +48,7 @@
         <div class="bird-container bird-container--four">
             <div class="bird bird--four"></div>
         </div>
-       
+
     </div>
 
 
@@ -62,48 +63,23 @@
             <div class="search_div mb-4">
                 <h5 class="justify-content-center pt-2 pl-3"></h5>
                 <form class="form-inline my-2 my-lg-0 mt-3 ml-3">
-                    <input class="form-control mr-sm-2 float-left" type="search" placeholder="Enter city name"
+                    <!-- <input class="form-control mr-sm-2 float-left" type="search" placeholder="Enter city name"
                         id="city_search" aria-label="Search">
                     <button id="search" class="btn waves-effect waves-light" type="submit" name="action">Search
                         <i class="material-icons right"></i>
-                    </button>
+                    </button> -->
                 </form>
             </div>
         </div>
     </div>
 
-    <!-- footer container for local weather -->
-    <footer class="footer-container" style="padding-top: 30px" ;>
-        <div id="city-name-wrapper">
-            <!-- <h2 class="text-center">Today's weather: </h2> -->
-            <h2 class="text-center" id="cityname"></h2>
 
-            <!-- <div id="city-forecast">
-                <p class="weather-descr col-xs-12"></p>
-                <p class="temp col-xs-12"></p>
-                <p class="pressure col-xs-12"></p>
-                <p class="wind-spd col-xs-12"></p>
-                <div id="altit"></div>
-                <div id="latitude-val"></div> -->
-
-
-            </div>
-        </div>
-        <!-- forecast  -->
-        <div id="weather_data" class="weather-container">
-            <a class="text-center">Today's weather: </a>
-            <img class="current_weather_icon" src="">
-            <a class="current_temp">temp</a>
-            <a class="current_hum">hum</a>
-            <a class="current_wind">wind</a>
-        </div>
-    </footer>
 
 
 
     <div class="input">
         <input type="text" class="inputValue" placeholder="Enter City Name">
-        <input type="submit" value="Submit" class="button">
+        <button id="searchbtn" type="submit" value="Submit" class="button"></button>
     </div>
 
     <p class="categories">
@@ -112,19 +88,23 @@
         <button>Fuel up!</button>
     </p>
 
+
     <!-- footer container for local weather -->
-    <footer class="page-footer footer-container">
-        <div class="row">
-            <div class="col l6 s12"></div>
-            <h5 class="white-text" style="color:black">Local Weather</h5>
-            <p class="desc"></p>
-            <p class="temp"></p>
-            <p class="hum"></p>
-            <p class="wind"></p>
+    <footer class="footer-container" style="padding-top: 30px" ;>
+        <div id="city-name-wrapper">
+            <!-- <h2 class="text-center">Today's weather: </h2> -->
+            <h2 class="text-center" id="cityname"></h2>
         </div>
+
+        <!-- forecast  -->
+        <div id="weather_data" class="weather-container">
+            <a class="text-center">Today's weather: </a>
+            <img class="current_weather_icon" src="">
+            <a class="current_temp"></a>
+            <a class="current_hum"></a>
+            <a class="current_wind"></a>
         </div>
     </footer>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

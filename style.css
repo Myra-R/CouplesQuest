@@ -81,9 +81,42 @@ h5 {
 	background-blend-mode: soft-light;
 	background-size: cover;
 	background-position: center center;
-	padding: 2rem;
+	padding: 2rem;  
 }
 
+.categories-container{
+	font-family: "Arima Madurai", cursive;
+	color: black;
+	font-size: 1rem; 
+	letter-spacing: -1px;
+	/* text-shadow: 0px 1px 1px rgba(255,255,255,0.6);  */
+	border-radius: 50px;
+	z-index: 3;
+	text-align: center;
+}
+
+.commingSoon-container{
+	font-family: "Arima Madurai", cursive;
+	color: black;
+	background-color:#e9b84f;
+	font-size: 1rem; 
+	letter-spacing: -1px;
+	/* text-shadow: 0px 1px 1px rgba(255,255,255,0.6);  */
+	border-radius: 50px;
+	z-index: 3;
+	text-align: center;
+
+}
+h3{
+	font-family: "Arima Madurai", cursive;
+	color: black;
+	font-size: 1rem; 
+	letter-spacing: -1px;
+	/* text-shadow: 0px 1px 1px rgba(255,255,255,0.6);  */
+	border-radius: 10px;
+	z-index: 3;
+	text-align: center;
+}
 
 .button {
 	font-family: "Arima Madurai", cursive;

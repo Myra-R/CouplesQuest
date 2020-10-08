@@ -1,22 +1,20 @@
-// define vars
-// let city = "";
+var apiKey = "5ce8439fd4264478d1da0b24a7cd547d";
+var city = "houston"
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=a46d7ace8fe9b30fe73ee26488f40d18";
 
-var button = document.querySelector('.button')
-var inputValue = document.querySelector('.inputValue');
-var name = document.querySelector('.name');
-var icon = document.querySelector('.icon');
-var temp = document.querySelector('.temp');
 
-function brewery(city){
-    var brewerurl="https://api.openbrewerydb.org/breweries?q="+city+"&appid"
-    console.log(brewerurl);
-    $.ajax({
-        url: breweryurl,
-        method: "GET"
-        
+
+
+$.ajax({
+  url: queryURL,
+  method: "GET"
 })
-.then(function (response)
 
+.then(function(response) {
+
+  console.log(queryURL);
+  console.log(response);
+})
 
 // button.addEventListener('click', function () {
 //     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&units=imperial&appid=a46d7ace8fe9b30fe73ee26488f40d18')
@@ -32,23 +30,3 @@ function brewery(city){
 //         temp.innerHTML = tempValue;
 
 
-
-// function apiCall() {
-//     $.ajax({
-//         url = "https://api.openweathermap.org/data/2.5/weather?q=",
-//         APIkey = "&appid=5ce8439fd4264478d1da0b24a7cd547d",
-//         queryurl = url + city + APIkey
-        
-
-//     }).then(function (current_data) {
-//         console.log(current_data);
-//         console.log(queryurl);
-//         let temp = Math.round(((current_data.main.temp - 273.15) * 9 / 5 + 32))
-//         console.log("The temperature in " + city + " is: " + temp);
-//         $("#current_temp").text("Temperature: " + temp + String.fromCharCode(176) + "F");
-//         $("#current_weather_icon").attr({
-//             "src": "http://openweathermap.org/img/w/" + current_data.weather[0].icon + ".png",
-//             "height": "100px", "width": "100px"
-//         });
-//     })
-// }

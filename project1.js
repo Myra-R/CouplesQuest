@@ -1,3 +1,37 @@
+
+var queryUrl = "https://api.openbrewerydb.org/breweries?by_city=";
+var breweryCity = ""
+
+$.ajax({
+    url: queryUrl,
+    method: "GET"
+})
+
+    .then(function (response) {
+
+        console.log(queryUrl);
+        console.log(response);
+    })
+
+$("#click-me").on("click", function (brew) {
+    fetch(inputValue.value)
+})
+
+$( "#inputId" ).keydown(function (key){
+    var code = key.keyCode || key.which;
+    if( code == 32 ) { 
+        $( this ).val(
+            function( index, value ){
+                return value.substr( 0, value.length - 1 );
+        })
+        setTimeout(
+            function(){
+                $(this).val($(this).val() + "_");
+            }, 10
+        )
+    }
+})
+
 let city = "";
 var apiKey = "5ce8439fd4264478d1da0b24a7cd547d";
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=a46d7ace8fe9b30fe73ee26488f40d18";
@@ -75,19 +109,3 @@ $.ajax({
 //         desc.innerHTML = descValue;
 //         temp.innerHTML = tempValue;
 
-<<<<<<< HEAD
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-=======
-
->>>>>>> 7dd7cd1c9e1b2cc953fb5a2553b8f4ea08615580

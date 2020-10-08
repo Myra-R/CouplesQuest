@@ -284,3 +284,11 @@ body {
 	text-align: center;
 	padding-top: 50px;
   }
+
+  .current_temp {
+	  margin: 0px 16px;
+  }
+
+  .weather-header{
+	  padding-right: 16px;
+  }

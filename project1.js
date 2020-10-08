@@ -1,4 +1,6 @@
 
+// document.getElementById("searchbtn").onclick=
+
 $( "#searchbtn" ).on("click",function(){
 
   let city = $(".inputValue").val();
@@ -13,7 +15,7 @@ var weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "
     }).then(function (current_data) {
       console.log(current_data);
       let temp = Math.round(((current_data.main.temp - 273.15) * 9 / 5 + 32))
-      console.log("The temperature in " + weatherCity + " is: " + temp);
+      console.log("The temperature in " + city + " is: " + temp);
       $(".current_temp").text("Temperature: " + temp + String.fromCharCode(176) + "F");
       $(".current_hum").text("Humidity: " + current_data.main.humidity + " %");
       $(".current_wind").text("Wind Speed: " + current_data.wind.speed + " MPH");

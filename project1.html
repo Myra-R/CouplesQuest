@@ -6,21 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Couples Quest</title>
 
+
     <!-- Compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fmatchboxhero%2Fpen%2FRLebOY&amp;format=json"
+        title="Couples Quest">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet">
+        <!-- <link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-0f28f63794ca058b771d15551a377d1c696a0da28f6be5bfe3846d5d60a57bff.css">
+        <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/2-5161443c.chunk.css"> 
+        <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/everypage-dd5474f1.css"> 
+        <link rel="stylesheet" media="all" href="https://static.codepen.io/assets/editor/editor-84317cbfecf81b2f11023a8b63c2a2921bae99311a1d234065365f6ac32016bb.css">
+        <link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/editor/themes/twilight-bbb3d58f8024c27567f788f3990f2dce8754c2b67246bf12ad766768fe51955b.css" id="cm-theme"> -->
+
 </head>
 
 <body>
     <div class="container">
 
-        <h1>Couples Quest...
-            <p>Let your adventure start here</p>
+        <h1 class=head1>Couples Quest...
+            <p>...Let your adventure start here:</p>
+
         </h1>
 
         <div class="bird-container bird-container--one">
-            <div class="bird bird--one"></div>
+            <div class="bird birdConOne"></div>
         </div>
 
         <div class="bird-container bird-container--two">
@@ -34,8 +47,9 @@
         <div class="bird-container bird-container--four">
             <div class="bird bird--four"></div>
         </div>
-
+       
     </div>
+
 
 
     <!-- <div class="input">
@@ -82,6 +96,32 @@
             <a class="current_temp">temp</a>
             <a class="current_hum">hum</a>
             <a class="current_wind">wind</a>
+        </div>
+    </footer>
+
+
+
+    <div class="input">
+        <input type="text" class="inputValue" placeholder="Enter City Name">
+        <input type="submit" value="Submit" class="button">
+    </div>
+
+    <p class="categories">
+        <button>Cheers to Beers!</button>
+        <button>Dance your pants off!</button>
+        <button>Fuel up!</button>
+    </p>
+
+    <!-- footer container for local weather -->
+    <footer class="page-footer footer-container">
+        <div class="row">
+            <div class="col l6 s12"></div>
+            <h5 class="white-text" style="color:black">Local Weather</h5>
+            <p class="desc"></p>
+            <p class="temp"></p>
+            <p class="hum"></p>
+            <p class="wind"></p>
+        </div>
         </div>
     </footer>
 

@@ -29,6 +29,7 @@ $.ajax({
 //         desc.innerHTML = descValue;
 //         temp.innerHTML = tempValue;
 
+<<<<<<< HEAD
 © 2020 GitHub, Inc.
 Terms
 Privacy
@@ -41,3 +42,6 @@ API
 Training
 Blog
 About
+=======
+
+>>>>>>> 7dd7cd1c9e1b2cc953fb5a2553b8f4ea08615580

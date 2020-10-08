@@ -258,6 +258,29 @@ h5 {
 	z-index: 3;
 }
 
-.footer-container {
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .foot-container {
+	  background-color: transparent;
+	  color: black;
+	  font-size: 10px;
+	  padding-top: 30px;
+  }
+
+  .weather-container {
 	background-color: transparent;
-}
+	font-family: 'Arima Madurai', cursive;
+	color: black;
+	font-weight: bold;
+	font-size: 21px;
+	text-align: center;
+	padding-top: 50px;
+  }

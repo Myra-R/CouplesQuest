@@ -27,18 +27,18 @@
 	text-align: center;
 }
 
-button { 
-
+button {
 	font-family: "Arima Madurai", cursive;
 	color: black;
-	background-color:#e9b84f;
-	font-size: 1rem; 
+	background-color: #e9b84f;
+	font-size: 1.5rem; 
 	letter-spacing: -1px;
-	text-shadow: 0px 1px 1px rgba(7, 0, 0, 0.6); 
+	/* text-shadow: 0px 1px 1px rgba(255,255,255,0.6);  */
 	border-radius: 50px;
-	z-index: 3;
-	text-align: center !important;
-	margin: auto;
+	z-index: 1;
+	text-align: right;
+	align-items: right;
+	justify-content: right;
 
 }
 

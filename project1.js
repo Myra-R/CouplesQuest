@@ -7,20 +7,29 @@ var name = document.querySelector('.name');
 var icon = document.querySelector('.icon');
 var temp = document.querySelector('.temp');
 
+function brewery(city){
+    var brewerurl="https://api.openbrewerydb.org/breweries?q="+city+"&appid"
+    console.log(brewerurl);
+    $.ajax({
+        url: breweryurl,
+        method: "GET"
+        
+})
+.then(function (response)
 
 
-button.addEventListener('click', function () {
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&units=imperial&appid=a46d7ace8fe9b30fe73ee26488f40d18')
-    // promises
-    .then(response => response.json())
-    .then(data => {
-        var nameValue = data['name'];
-        var tempValue = data['main']['temp'];
-        var descValue = data['weather'][0]['description'];
+// button.addEventListener('click', function () {
+//     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue.value + '&units=imperial&appid=a46d7ace8fe9b30fe73ee26488f40d18')
+//     // promises
+//     .then(response => response.json())
+//     .then(data => {
+//         var nameValue = data['name'];
+//         var tempValue = data['main']['temp'];
+//         var descValue = data['weather'][0]['description'];
 
-        name.innerHTML = nameValue;
-        desc.innerHTML = descValue;
-        temp.innerHTML = tempValue;
+//         name.innerHTML = nameValue;
+//         desc.innerHTML = descValue;
+//         temp.innerHTML = tempValue;
 
 
 

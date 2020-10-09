@@ -46,14 +46,18 @@ THEN I am presented with my saved event list
 
 ### IMPROVEMENTS
 
-* Missing/additional categories
-* Favorite and Save buttons
-* Calendar picker
-* Random event generator option 
+* Add additional categories
+* A random category and event option
+* Functional “Add to Favorites” and “Skip” buttons
+* Calendar picker to choose a specific date
+* Add to personal calendar option
+* Invite friends option
+* Geolocation feature for more accurate results
 
 
 ### SCREENSHOT
 
+<img src="images/home.png" alt="home">
 
 ### REQUIRED URLs
 

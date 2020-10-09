@@ -26,7 +26,6 @@
 </head>
 
 <body>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <div class="container">
 
         <h1 class=head1>Couples Quest...
@@ -54,9 +53,14 @@
 
 
     <script src=’https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
-    <script src= "project1.js"></script>
 
 
+
+
+    <!-- <div class="input">
+        <input type="text" class="inputValue" placeholder="Enter City Name">
+        <button type="submit" value="Submit" class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </div> -->
 
     <div class="container-fluid row">
         <div class="col-3 left_div justify-content-center pt-3">
@@ -79,27 +83,44 @@
 
     <div class="input">
         <input type="text" class="inputValue" placeholder="Enter City Name">
-        <button id="searchbtn" type="submit" value="Submit" class="button"></button>
+        <button id="searchbtn" type="submit" value="Submit" class="btn btn-info btn-lg">Search</button>
     </div>
 
-    <p class="categories">
-        <button>Cheers to Beers!</button>
-        <button>Dance your pants off!</button>
-        <button>Fuel up!</button>
+    <div class="p-container" style="padding-top: px" ;>
+        <!-- things to do/ categories -->
+        <p id="categories" class="categories-container">
+            <a class="text-center1">Cheers to Beers! </a>  
+            <br>
+            <br>
+            <!-- <a class="text-middle">More Features Comming Soon! </a>     -->
     </p>
+    </div>
+
+    <div class="card" id="brew-info">
+        <h3>Choose your adventure!</h3>
+        <p id="card brew-container" class="card-container">
+            
+        </p>
+    </div>
+
 
 
     <!-- footer container for local weather -->
-    <footer class="footer-container" style="padding-top: 50px" ;>
+    <footer class="footer-container" style="padding-top: 30px" ;>
         <!-- forecast  -->
         <div id="weather_data" class="weather-container">
-            <a class="text-center weather-header">Today's weather: </a>
-                <img class="current_weather_icon" src="">
+            <a class="text-center">Today's weather: </a>
+            <img class="current_weather_icon" src="">
             <a class="current_temp"></a>
             <a class="current_hum"></a>
             <a class="current_wind"></a>
         </div>
+        
     </footer>
+
+    <div class="commingSoon-container" style="padding-top: px";>
+        <a class="text-middle">More Features Comming Soon! </a>    
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
